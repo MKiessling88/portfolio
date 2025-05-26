@@ -1,7 +1,18 @@
 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     max-width: 100%;
     background: linear-gradient(45deg, #000000 0%, #000000 30%, #08463B 100%);
-
+    h1{
+        color: white;
+        font-size: 50px;
+    }
+    h3{
+        color: white;
+        font-size: 30px;
+    }
 }
