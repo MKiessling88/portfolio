@@ -1,18 +1,50 @@
-div {
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #000000 0%, #000000 30%, #08463B 100%);
+
+  .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    background: linear-gradient(45deg, #000000 0%, #000000 30%, #08463B 100%);
-    h1{
-        color: white;
-        font-size: 50px;
+    width: 100%;
+    max-width: 1440px;
+
+    h1 {
+      color: white;
+      font-size: 50px;
+      text-align: center;
     }
-    h3{
-        color: white;
-        font-size: 30px;
+
+    h3 {
+      color: white;
+      font-size: 30px;
+      text-align: center;
     }
+  }
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  button {
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
 }
