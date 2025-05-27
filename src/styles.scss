@@ -2,41 +2,33 @@
     margin: 0;
 }
 
-.font-figtree{
-    font-family: 'Figtree';
+body{
+    background: linear-gradient(-15deg, #13074E 0%, #1D0A79F2 45%, #13074E 100%);
+    overflow-x: hidden;
 }
 
-.font-fira-code{
-    font-family: 'Fira Code';
+.font-handjet{
+    font-family: 'Handjet';
 }
 
-.font-karla{
-    font-family: 'Karla';
+.font-roboto-mono{
+    font-family: 'Roboto Mono';
 }
 
-/* figtree-700 - latin */
+/* handjet-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 700;
-  src: url('./assets/fonts/figtree-v8-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* fira-code-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Fira Code';
+  font-family: 'Handjet';
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/fira-code-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./assets/fonts/handjet-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* karla-700 - latin */
+/* roboto-mono-500 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Karla';
+  font-family: 'Roboto Mono';
   font-style: normal;
-  font-weight: 700;
-  src: url('./assets/fonts/karla-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-weight: 500;
+  src: url('./assets/fonts/roboto-mono-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
