@@ -1,21 +1,28 @@
-.wrapper{
+.wrapper {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
+
+  img {
+    height: 720px;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+  }
 }
 
-.text{
-    position: fixed;
-    bottom: 50px;
-    left: 50px;
-    color: #E15544;
-    text-align: center;
+.text {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: #E15544;
+  text-align: center;
 }
 
-h2{
-    font-size: 50px;
+h2 {
+  font-size: 50px;
 }
 
-h1{
-    font-size: 70px;
+h1 {
+  font-size: 70px;
 }
