@@ -11,7 +11,7 @@ h1 {
     margin-bottom: 16px;
 }
 
-h3{
+h3 {
     margin-right: 5%;
     font-size: 45px;
 }
@@ -44,6 +44,12 @@ p {
         justify-content: space-between;
         width: 100%;
         margin-left: 64px;
+
+        .relocate {
+            &:hover {
+                rotate: 15deg;
+            }
+        }
     }
 
     img {
@@ -84,6 +90,7 @@ p {
     flex-direction: row;
     gap: 10px;
     margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .flexRight {

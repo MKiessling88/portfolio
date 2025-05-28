@@ -1,0 +1,12 @@
+.wrapper{
+    margin: 50px;
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        .skill-img{
+            width: 88px;
+            height: 100px;
+            margin: 20px 10px;
+        }
+    }
+}
