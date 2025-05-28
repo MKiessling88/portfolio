@@ -1,6 +1,97 @@
-.wrapper{
+$colorGreen: #02F4BF;
+$colorOrange: #E15544;
 
-    img{
-        height: 720px;
+h1,
+h3 {
+    color: $colorOrange;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+h3{
+    margin-right: 5%;
+    font-size: 45px;
+}
+
+p,
+span {
+    color: $colorGreen;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+    max-width: 100%;
+    margin: 50px;
+    box-sizing: border-box;
+
+    div {
+        justify-content: flex-end;
     }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 64px;
+    }
+
+    img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .smallPng {
+        width: 30px;
+    }
+
+    .arrow {
+        width: 25px;
+    }
+
+    .text-rechts {
+        text-align: right;
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        background-color: $colorGreen;
+        color: black;
+        border: none;
+        font-size: 20px;
+
+        &:hover {
+            color: $colorOrange;
+        }
+    }
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.flexRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end !important;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 16px;
+    height: 55px;
 }

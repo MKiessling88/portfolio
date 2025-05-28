@@ -1,6 +1,36 @@
 <div class="wrapper">
-    <img src="./../../assets/img/Projekt Hintergrund entfernen.png" alt="">
-    <div>
-        <h1>Why me</h1>
+    <img src="./../../assets/img/1000166082.jpg" alt="">
+    <div class="information">
+        <div class="text-rechts">
+            <h1>Why me</h1>
+            <span>I am passionate about coding because it allows me to transform ideas into functional solutions that
+                make a real impact. The ever-evolving nature of technology drives me to continuously learn and grow
+                professionally. I thrive on solving complex problems, and each challenge enhances my skills and fuels my
+                enthusiasm for development.
+            </span>
+        </div>
+        <div>
+            <div class="flexCenter">
+                <h3>I am</h3>
+                <img style="width: 30px;" [src]="currentImagePosition" (mouseenter)="currentImagePosition = '/assets/img/Vector-hover.png'"
+                    (mouseleave)="currentImagePosition = '/assets/img/Vector.png'" alt="">
+                <p>Located in <br> Baden-Württemberg</p>
+            </div>
+            <div class="flexRight">
+                <img class="arrow" src="./../../assets/img/Arrow 5.png" style="margin-right: 40%;" alt="">
+                <img class="smallPng" src="./../../assets/img/Group 24.png" alt="">
+                <p style="margin-right: 5%;">open to <br> relocate</p>
+            </div>
+            <div class="flexRight">
+                <img style="width: 50px;" [src]="currentImageRemote" (mouseenter)="currentImageRemote = '/assets/img/Remote-hover.png'"
+                    (mouseleave)="currentImageRemote = '/assets/img/Remote.png'" alt="">
+                <p>open to <br> work remote</p>
+                <img class="arrow" src="./../../assets/img/Arrow 4.png" style="margin-left: 12%;" alt="">
+                <img class="arrow" src="./../../assets/img/Arrow 01.png" style="margin-left: 12%;" alt="">
+            </div>
+            <div class="flexRight">
+                <button>Let´s talk</button>
+            </div>
+        </div>
     </div>
 </div>

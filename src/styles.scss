@@ -1,34 +1,39 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-body{
-    background: linear-gradient(-15deg, #13074E 0%, #1D0A79F2 45%, #13074E 100%);
-    overflow-x: hidden;
+body {
+  background: linear-gradient(-15deg, #13074E 0%, #1D0A79F2 45%, #13074E 100%);
+  overflow-x: hidden;
 }
 
-.font-handjet{
-    font-family: 'Handjet';
+.font-handjet {
+  font-family: 'Handjet';
 }
 
-.font-roboto-mono{
-    font-family: 'Roboto Mono';
+.font-roboto-mono {
+  font-family: 'Roboto Mono';
 }
 
 /* handjet-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Handjet';
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/handjet-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./assets/fonts/handjet-v19-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* roboto-mono-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 500;
-  src: url('./assets/fonts/roboto-mono-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./assets/fonts/roboto-mono-v30-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

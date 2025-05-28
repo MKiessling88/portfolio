@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './why-me.component.scss'
 })
 export class WhyMeComponent {
+  currentImageRemote: string = '/assets/img/Remote.png';
+  currentImagePosition: string = '/assets/img/Vector.png';
 
 }
