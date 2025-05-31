@@ -16,14 +16,17 @@ export class MyProjectsComponent {
       "imagePath": "./../../../assets/img/tressures.png",
       "name": "JOIN",
       "technologies": "HTML | CSS | JavaScript | Firebase",
+      "discription": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ", 
       "GIT": "https://github.com/MKiessling88/Join-Gruppenarbeit",
-      "link": ""
+      "link": "",
+      "reverse": false
     }, {
       "imagePath": "./../../../assets/img/tressures.png",
       "name": "Treasures-of-Eternity",
       "technologies": "HTML | CSS | JavaScript",
       "GIT": "https://github.com/MKiessling88/Treasures-of-Eternity",
-      "link": ""
+      "link": "",
+      "reverse": true
     }
   ];
 

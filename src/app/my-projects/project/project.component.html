@@ -1,7 +1,10 @@
-<div>
-    <img [src]="project.imagePath">
-    <div>
-        <h3>{{ project.name }}</h3>
-        <p>{{ project.technologies }}</p>
+<img [src]="project.imagePath">
+<div class = "content">
+    <h3>{{ project.name }}</h3>
+    <p>{{ project.technologies }}</p>
+    <p>{{ project.discription }}</p>
+    <div class="buttons">
+        <button>Github</button>
+        <button> Live Test</button>
     </div>
 </div>
