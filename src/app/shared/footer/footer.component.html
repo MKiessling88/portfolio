@@ -1,7 +1,7 @@
 <div class="wrapper">
     <div>
     <h4 class="font-handjet colorOrange">&lt;MK&gt;</h4>
-    <p class="font-roboto-mono colorOrange">Frontend Developer</p>
+    <p class="font-roboto-mono colorOrange p_frontend">Frontend Developer</p>
 </div>
 <div>
     <h5 class="font-roboto-mono colorOrange">&copy; Marcel Kießling 2025</h5>
@@ -11,8 +11,27 @@
     </div>
 </div>
 <div class="icons">
-    <img src="./../../../assets/img/VectorGIT.png" alt="">
-    <img src="./../../../assets/img/VectorMail.png" alt="">
-    <img src="./../../../assets/img/VectorLinked.png" alt="">
+<img
+  [src]="gitIconSrc"
+  (mouseenter)="onIconHover('git', true)"
+  (mouseleave)="onIconHover('git', false)"
+  alt="GitHub Icon"
+/>
+
+<!-- Mail Icon -->
+<img
+  [src]="mailIconSrc"
+  (mouseenter)="onIconHover('mail', true)"
+  (mouseleave)="onIconHover('mail', false)"
+  alt="Mail Icon"
+/>
+
+<!-- LinkedIn Icon -->
+<img
+  [src]="linkedIconSrc"
+  (mouseenter)="onIconHover('linked', true)"
+  (mouseleave)="onIconHover('linked', false)"
+  alt="LinkedIn Icon"
+/>
 </div>
 </div>

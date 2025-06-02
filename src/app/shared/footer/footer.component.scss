@@ -1,4 +1,16 @@
-.wrapper{
+h5 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.p_frontend {
+    font-size: 12px;
+}
+
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -6,7 +18,7 @@
     height: 120px;
     max-width: 1440px;
 
-    div{
+    div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -14,13 +26,23 @@
     }
 }
 
-.links{
+.links {
     display: flex;
     flex-direction: row !important;
     gap: 20px;
+
+    a {
+        text-decoration: none;
+        font-size: 12px;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #02F4BF;
+        }
+    }
 }
 
-.icons{
+.icons {
     display: flex;
     flex-direction: row !important;
     gap: 20px;
