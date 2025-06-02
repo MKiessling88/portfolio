@@ -30,8 +30,10 @@ p {
     display: flex;
     justify-content: space-between;
     height: auto;
-    max-width: 100%;
-    margin: 50px;
+    max-width: 1440px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     box-sizing: border-box;
 
     div {
@@ -53,10 +55,10 @@ p {
     }
 
     img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
     }
 
     .smallPng {
