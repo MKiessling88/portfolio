@@ -1,0 +1,51 @@
+.wrapper {
+    margin: 50px;
+}
+
+.contactmeText {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    img {
+        width: 50px;
+        height: 30px;
+    }
+}
+
+.mail_number {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 12px;
+
+    .arrow {
+        height: 45px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.email {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    img {
+        width: 24px;
+    }
+}
+
+.number {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    img {
+        width: 24px;
+    }
+}

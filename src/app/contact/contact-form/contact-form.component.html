@@ -1,0 +1,39 @@
+<form #form="ngForm" (ngSubmit)="onSubmit()" class="contact-form">
+  <div class="form-grid">
+    <input
+      [(ngModel)]="contactData.name"
+      name="name"
+      type="text"
+      placeholder="Your Name"
+      required
+    />
+    <input
+      [(ngModel)]="contactData.email"
+      name="email"
+      type="email"
+      placeholder="Your Email"
+      required
+    />
+    <textarea
+      [(ngModel)]="contactData.message"
+      name="message"
+      placeholder="Your Message"
+      required
+    ></textarea>
+  </div>
+
+  <div class="checkbox-wrapper">
+    <label>
+      <input
+        type="checkbox"
+        name="terms"
+        [(ngModel)]="contactData.termsAccepted"
+        required
+      />
+      I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.
+    </label>
+  </div>
+
+  <button type="submit" [disabled]="!form.valid">Send</button>
+</form>
+

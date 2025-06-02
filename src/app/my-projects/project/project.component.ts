@@ -11,4 +11,8 @@ import { CommonModule } from '@angular/common';
 export class ProjectComponent {
   @Input() project: any;
   @Input() index!: number;
+
+  openLink(link: string) {
+    window.open(link, '_blank');
+  }
 }

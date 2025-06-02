@@ -4,7 +4,7 @@
     <p>{{ project.technologies }}</p>
     <p>{{ project.discription }}</p>
     <div class="buttons">
-        <button>Github</button>
-        <button> Live Test</button>
+        <button (click)="openLink(project.GIT)" class="gitbtn">Github</button>
+        <button class="livebtn"> Live Test</button>
     </div>
 </div>

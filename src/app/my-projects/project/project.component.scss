@@ -1,4 +1,13 @@
-:host{
+h3 {
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+:host {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,15 +16,49 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 50px 0;
+    color: #02F4BF;
+    font-family: 'Roboto Mono';
 
-    .content{
+    .content {
         display: flex;
         flex-direction: column;
         max-width: 35%;
         gap: 20px;
     }
 
-    img{
+    img {
         width: 500px;
+    }
+
+    .buttons {
+        .gitbtn {
+            font-family: 'Roboto Mono';
+            margin-right: 20px;
+            padding: 5px 10px;
+            background-color: transparent;
+            border: 1px solid #02F4BF;
+            color: #E15544;
+            transition: color 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                color: #02F4BF;
+            }
+        }
+
+        .livebtn {
+            font-family: 'Roboto Mono';
+            margin-right: 20px;
+            padding: 5px 10px;
+            background-color: #02F4BF;
+            border: 1px solid #02F4BF;
+            color: black;
+            transition: color 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                color: #E15544;
+            }
+        }
     }
 }
