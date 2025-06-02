@@ -24,6 +24,7 @@ export class MyProjectsComponent {
       "imagePath": "./../../../assets/img/tressures.png",
       "name": "Treasures-of-Eternity",
       "technologies": "HTML | CSS | JavaScript",
+      "discription": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen..",
       "GIT": "https://github.com/MKiessling88/Treasures-of-Eternity",
       "link": "",
       "reverse": true
