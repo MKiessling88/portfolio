@@ -1,5 +1,9 @@
 .wrapper {
-    margin: 50px;
+    max-width: 1440px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
 }
 
 .contactmeText {
