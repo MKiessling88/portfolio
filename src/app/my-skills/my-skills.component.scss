@@ -1,9 +1,15 @@
-.wrapper{
-    margin: 50px;
-    div{
+.wrapper {
+    position: relative;
+    max-width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .skill-container {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        .skill-img{
+
+        .skill-img {
             width: 88px;
             height: 100px;
             margin: 20px 10px;
