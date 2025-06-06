@@ -13,7 +13,7 @@ export class MyProjectsComponent {
 
   public projects = [
     {
-      "imagePath": "./../../../assets/img/tressures.png",
+      "imagePath": "./../../../assets/img/join.png",
       "name": "JOIN",
       "technologies": "HTML | CSS | JavaScript | Firebase",
       "discription": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ", 
@@ -24,9 +24,9 @@ export class MyProjectsComponent {
       "imagePath": "./../../../assets/img/tressures.png",
       "name": "Treasures-of-Eternity",
       "technologies": "HTML | CSS | JavaScript",
-      "discription": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen..",
+      "discription": "Jump, run and throw game based on object-oriented approach. Help the Hero to find lives and mana to fight against the boss.",
       "GIT": "https://github.com/MKiessling88/Treasures-of-Eternity",
-      "link": "",
+      "link": "https://marcel-kiessling.developerakademie.net/Projekte/jumpandrun/index.html",
       "reverse": true
     }
   ];

@@ -1,18 +1,21 @@
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin-left: 50px;
-    margin-right: 50px;
+    position: relative;
+    max-width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
     gap: 20px;
 }
 
-.reviews{
+.reviews {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     gap: 50px;
 
-    img{
+    img {
         height: 70px;
         rotate: -15deg;
     }
