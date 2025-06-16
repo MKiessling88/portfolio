@@ -69,7 +69,7 @@
   margin-bottom: 20px;
 
   img {
-    width: clamp(300px, 20vw, 550px);
+    width: 400px;
   }
 }
 
@@ -97,5 +97,17 @@
 
   .portrait {
     display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .portrait_top img{
+    width: clamp(400px, 20vw, 550px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portrait_top img{
+    width: clamp(300px, 20vw, 550px);
   }
 }
