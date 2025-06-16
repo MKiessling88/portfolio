@@ -3,6 +3,7 @@
     max-width: 1440px;
     left: 50%;
     transform: translateX(-50%);
+    block-size: border-box;
 
     .skill-container {
         display: flex;
@@ -15,4 +16,43 @@
             margin: 20px 10px;
         }
     }
+}
+
+@media screen and (max-width: 1550px) {
+    .wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    } 
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .skill-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            rotate: 72deg;
+            height: 25px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        span{
+            text-align: center;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    } 
+}
+
+@media screen and (max-width: 330px) {
+    .wrapper {
+        padding-left: 0px;
+        padding-right: 0px;
+    } 
 }
