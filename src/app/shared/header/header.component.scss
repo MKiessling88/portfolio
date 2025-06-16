@@ -2,7 +2,7 @@
     position: absolute;
     top: 20px;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1150px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -47,5 +47,15 @@ a {
     span {
         font-size: 22px;
         color: #E15544;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .links {
+        display: none;
+    }
+
+    .languageSwitch {
+        display: none;
     }
 }

@@ -1,36 +1,99 @@
 .wrapper {
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   max-width: 1440px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
 
-  img {
-    height: 640px;
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
+.text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.button-line {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50%;
+  gap: 70%;
+}
+
+.arrow {
+  height: 20px;
+}
+
+.text h2 {
+  font-size: 36px;
+  margin: 0;
+  color: #E15544;
+}
+
+.text h1 {
+  font-size: 50px;
+  margin: 0;
+  color: #E15544;
+}
+
+.portrait {
+  display: flex;
+  align-items: flex-end;
+}
+
+.portrait img {
+  height: 640px;
+  object-fit: cover;
+  display: block;
+}
+
+.Contact_btn {
+  rotate: -90deg;
+  color: #E15544;
+  background-color: transparent;
+  border-color: #02F4BF;
+  font-size: 26px;
+  
+}
+
+.arrow {
+  rotate: 180deg;
+  height: 50px;
+}
+
+.portrait_top{
+  display: none;
+
+  img{
+    height: 550px;
   }
 }
 
-.text {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  color: #E15544;
+
+@media (max-width: 1260px) {
+  .button-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+.text-block{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.text{
   text-align: center;
 }
 
-h2 {
-  font-size: 50px;
-}
-
-h1 {
-  font-size: 70px;
-}
-
-.arrow{
-    height: 45px !important;
-    rotate: 180deg;
+  .portrait_top {
+    display: block;
+  }
+  .portrait{
+    display: none;
+  }
 }
