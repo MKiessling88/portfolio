@@ -20,6 +20,5 @@ export class MySkillsComponent {
     { imagePath: 'assets/img/skills/skill-GIT.png' },
     { imagePath: 'assets/img/skills/skill-Scrum.png' },
     { imagePath: 'assets/img/skills/skill-MaterialDesign.png' },
-    { imagePath: 'assets/img/skills/skill-Challenge.png' },
   ];
 }
