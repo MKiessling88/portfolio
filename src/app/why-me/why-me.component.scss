@@ -107,6 +107,23 @@ p {
     height: 55px;
 }
 
+.flexRight_response{
+    display: flex;
+    justify-self: center !important;
+    display: none !important;
+    transform: scaleX(-1);
+    margin-bottom: 20px;
+    margin-left: 50%;
+}
+
+.flexLeft_response{
+    display: flex;
+    justify-self: center !important;
+    display: none !important;
+    margin-top: 20px;
+    margin-right: 50%;
+}
+
 .iam_top{
     width: 100%;
     display: none !important;
@@ -150,5 +167,11 @@ p {
     }
     .text br{
         display: none;
+    }
+    .flexRight_response{
+        display: block !important;
+    }
+    .flexLeft_response{
+        display: block !important;
     }
 }
