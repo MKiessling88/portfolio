@@ -1,6 +1,6 @@
 <div class="wrapper">
     <H1>My Projects</H1>
-    <div>
+    <div class="projects">
         <app-project *ngFor="let project of projects;"
         [project]="project" [ngStyle]="{ 'flex-direction': project.reverse ? 'row-reverse' : 'row' }"></app-project>
     </div>
