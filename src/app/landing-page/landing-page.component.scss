@@ -28,13 +28,13 @@
 }
 
 .text h2 {
-  font-size: 36px;
+  font-size: clamp(18px, 5vw, 36px);
   margin: 0;
   color: #E15544;
 }
 
 .text h1 {
-  font-size: 50px;
+  font-size: clamp(22px, 5vw, 50px);
   margin: 0;
   color: #E15544;
 }
@@ -56,7 +56,7 @@
   background-color: transparent;
   border-color: #02F4BF;
   font-size: 26px;
-  
+
 }
 
 .arrow {
@@ -64,11 +64,12 @@
   height: 50px;
 }
 
-.portrait_top{
+.portrait_top {
   display: none;
+  margin-bottom: 20px;
 
-  img{
-    height: 550px;
+  img {
+    width: clamp(300px, 20vw, 550px);
   }
 }
 
@@ -80,20 +81,21 @@
 }
 
 @media screen and (max-width: 1110px) {
-.text-block{
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
+  .text-block {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-.text{
-  text-align: center;
-}
+  .text {
+    text-align: center;
+  }
 
   .portrait_top {
     display: block;
   }
-  .portrait{
+
+  .portrait {
     display: none;
   }
 }

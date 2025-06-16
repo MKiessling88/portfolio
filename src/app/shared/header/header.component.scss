@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 999;
+    box-sizing: border-box;
 
     .navbar {
         display: flex;
@@ -50,12 +51,32 @@ a {
     }
 }
 
-@media screen and (max-width: 700px) {
+.menu_btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
     .links {
         display: none;
     }
 
-    .languageSwitch {
+    .languageSwitch .link,
+    .languageSwitch span {
         display: none;
     }
+
+    .menu_btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
 }
