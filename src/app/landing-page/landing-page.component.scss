@@ -30,13 +30,13 @@
 .text h2 {
   font-size: clamp(18px, 5vw, 36px);
   margin: 0;
-  color: #E15544;
+  color: #02F4BF;
 }
 
 .text h1 {
   font-size: clamp(22px, 5vw, 50px);
   margin: 0;
-  color: #E15544;
+  color: #02F4BF;
 }
 
 .portrait {
@@ -109,5 +109,8 @@
 @media screen and (max-width: 600px) {
   .portrait_top img{
     width: clamp(300px, 20vw, 550px);
+  }
+  .wrapper{
+    padding: 50px 50px 70px 50px;
   }
 }
