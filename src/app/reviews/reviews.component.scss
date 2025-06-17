@@ -7,16 +7,41 @@
     left: 50%;
     transform: translateX(-50%);
     gap: 20px;
+    box-sizing: border-box;
 }
 
 .reviews {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 50px;
+    margin-right: 35px;
+    gap: 30px;
+    -webkit-overflow-scrolling: touch;
 
     img {
         height: 70px;
         rotate: -15deg;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .wrapper {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .reviews {
+        overflow-x: auto;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        img {
+            display: none;
+        }
+    }
+
+    .wrapper {
+        margin-left: 20px;
     }
 }

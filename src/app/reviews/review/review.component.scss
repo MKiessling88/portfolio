@@ -1,7 +1,15 @@
 :host{
-    max-width: 300px;
+    min-width: 300px;
 }
 
 .margin_bottom{
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    :host{
+        border: solid 1px #02F4BF;
+        padding: 10px;
+    }
+    
 }
