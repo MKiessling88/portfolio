@@ -9,14 +9,14 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
-    gitIconSrc = 'assets/img/VectorGIT.png';
+  gitIconSrc = 'assets/img/VectorGIT.png';
   mailIconSrc = 'assets/img/VectorMail.png';
   linkedIconSrc = 'assets/img/VectorLinked.png';
 
   onIconHover(icon: string, hover: boolean): void {
     const basePath = 'assets/img/';
     const suffix = hover ? '_Hover' : '';
-    
+
     switch (icon) {
       case 'git':
         this.gitIconSrc = `${basePath}VectorGIT${suffix}.png`;

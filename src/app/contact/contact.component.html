@@ -4,7 +4,8 @@
         <img src="./../../assets/img/Arrow.png" alt="">
     </div>
     <div class="mail_number">
-        <p class="colorGreen font-roboto-mono">Encourage people to contact you and describe what role you are interested in. <br> Express interest in contributing to a new project.</p>
+        <p class="colorGreen font-roboto-mono">Encourage people to contact you and describe what role you are interested
+            in. <br> Express interest in contributing to a new project.</p>
         <div>
             <div class="email">
                 <img src="./../../assets/img/icon _email_.png" alt="">
@@ -18,4 +19,26 @@
         <img class="arrow" src="./../../assets/img/Arrow Up.png" alt="">
     </div>
     <app-contact-form></app-contact-form>
+    <div class="mail_number_response">
+        <div class="email_response">
+            <img src="/assets/img/icon _email_.png" alt="">
+            <p class="colorGreen font-roboto-mono">mkiessling1988&#64;outlook.de</p>
+        </div>
+        <div class="number_response">
+            <img src="/assets/img/icon _phone.png" alt="">
+            <p class="colorGreen font-roboto-mono">01520 4228053</p>
+        </div>
+    </div>
+    <div class="icons_response">
+        <img [src]="gitIconSrc" (mouseenter)="onIconHover('git', true)" (mouseleave)="onIconHover('git', false)"
+            alt="GitHub Icon" />
+
+        <!-- Mail Icon -->
+        <img [src]="mailIconSrc" (mouseenter)="onIconHover('mail', true)" (mouseleave)="onIconHover('mail', false)"
+            alt="Mail Icon" />
+
+        <!-- LinkedIn Icon -->
+        <img [src]="linkedIconSrc" (mouseenter)="onIconHover('linked', true)"
+            (mouseleave)="onIconHover('linked', false)" alt="LinkedIn Icon" />
+    </div>
 </div>
