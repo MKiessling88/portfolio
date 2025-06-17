@@ -8,13 +8,18 @@
     transform: translateX(-50%);
     gap: 20px;
     box-sizing: border-box;
+
+    p{
+        text-align: left;
+    }
 }
 
 .reviews {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-right: 35px;
+    margin-right: 10px;
+    margin-left: 10px;
     gap: 30px;
     -webkit-overflow-scrolling: touch;
 
@@ -24,10 +29,20 @@
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1000px) {
     .wrapper {
-        margin-left: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        p{
+            text-align: center;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 1200px) {
@@ -39,9 +54,5 @@
         img {
             display: none;
         }
-    }
-
-    .wrapper {
-        margin-left: 20px;
     }
 }
