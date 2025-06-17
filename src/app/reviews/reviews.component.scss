@@ -18,8 +18,8 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
     gap: 30px;
     -webkit-overflow-scrolling: touch;
 
@@ -40,6 +40,8 @@
     .wrapper {
         p{
             text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
     
