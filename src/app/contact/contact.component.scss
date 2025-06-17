@@ -4,6 +4,8 @@
     left: 50%;
     transform: translateX(-50%);
     margin-top: 50px;
+    box-sizing: border-box;
+    margin-right: 50px;
 }
 
 .contactmeText {
@@ -25,6 +27,7 @@
     flex-direction: row;
     gap: 20px;
     font-size: 12px;
+    margin-bottom: 20px;
 
     .arrow {
         height: 45px;
@@ -51,5 +54,37 @@
 
     img {
         width: 24px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contactmeText {
+        display: flex;
+        justify-content: center;
+
+        img {
+            display: none;
+        }
+    }
+
+    .email {
+        display: none;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .mail_number {
+        display: flex;
+        justify-content: center;
+
+        img {
+            display: none;
+        }
+
+        p {
+            text-align: center;
+        }
     }
 }
