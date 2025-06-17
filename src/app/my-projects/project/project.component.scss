@@ -24,6 +24,10 @@ p {
         flex-direction: column;
         max-width: 35%;
         gap: 20px;
+
+        .image_response {
+            display: none;
+        }
     }
 
     img {
@@ -66,5 +70,14 @@ p {
 @media screen and (max-width: 1000px) {
     .image {
         display: none !important;
+    }
+    .image_response {
+        display: block !important;
+        width: clamp(280px, 50vw, 500px) !important;
+    }
+    .content{
+        max-width: 85% !important;
+        text-align: center !important;
+        align-items: center !important;
     }
 }

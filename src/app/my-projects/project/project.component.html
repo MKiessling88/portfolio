@@ -3,6 +3,7 @@
     <h3>{{ project.name }}</h3>
     <p>{{ project.technologies }}</p>
     <p>{{ project.discription }}</p>
+    <img [src]="project.imagePath" class="image_response">
     <div class="buttons">
         <button (click)="openLink(project.GIT)" class="gitbtn">Github</button>
         <button (click)="openLink(project.link)" class="livebtn"> Live Test</button>

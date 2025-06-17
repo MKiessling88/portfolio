@@ -63,7 +63,6 @@
             rotate: 72deg;
             height: 25px;
             margin-bottom: 50px;
-            margin-top: 16px;
         }
 
         span {
@@ -71,6 +70,12 @@
             padding-left: 50px;
             padding-right: 50px;
         }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    img {
+        margin-top: -50px;
     }
 }
 
