@@ -1,22 +1,24 @@
 import { Component } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ContactFormComponent } from "./contact-form/contact-form.component";
-import { FooterComponent } from '../shared/footer/footer.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ContactFormComponent],
+  imports: [ContactFormComponent, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 
-  
+  constructor(public translate: TranslateService) { }
+
   gitIconSrc = 'assets/img/VectorGIT.png';
   mailIconSrc = 'assets/img/VectorMail.png';
   linkedIconSrc = 'assets/img/VectorLinked.png';
 
   onIconHover(icon: string, hover: boolean): void {
+
     const basePath = 'assets/img/';
     const suffix = hover ? '_Hover' : '';
 

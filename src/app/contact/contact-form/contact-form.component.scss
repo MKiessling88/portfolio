@@ -78,17 +78,16 @@
                 color: #ff0044;
             }
         }
+    }
+}
 
-        a {
-            color: #E15544;
-            text-decoration: none;
-            display: inline-block;
-            wh
+.privacy {
+    color: #E15544 !important;
+    text-decoration: none;
+    display: inline-block;
 
-            &:hover {
-                text-decoration: underline;
-            }
-        }
+    &:hover {
+        text-decoration: underline;
     }
 }
 
@@ -103,7 +102,7 @@ button[type='submit'] {
     transition: all 0.3s ease;
 
     @media screen and (max-width: 800px) {
-        justify-self: center;   
+        justify-self: center;
     }
 
     &:enabled {

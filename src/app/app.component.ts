@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/header/header.component";
 import { MainContentComponent } from "./main-content/main-content.component";
 import { FooterComponent } from "./shared/footer/footer.component";
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +15,10 @@ import { FooterComponent } from "./shared/footer/footer.component";
 })
 export class AppComponent {
   title = 'portfolio';
+
+    constructor(public translate: TranslateService) {
+    translate.addLangs(['en', 'de']);
+    translate.setDefaultLang('en');
+    translate.use('en');
+   }
 }

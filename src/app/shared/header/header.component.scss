@@ -36,6 +36,17 @@ a {
     }
 }
 
+.ls_btn {
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+        color: #02F4BF;
+        cursor: pointer;
+    }
+}
+
 .languageSwitch {
     display: flex;
     justify-content: space-between;
@@ -60,6 +71,10 @@ a {
 
 @media screen and (max-width: 800px) {
     .links {
+        display: none;
+    }
+
+    .ls_btn {
         display: none;
     }
 

@@ -2,7 +2,7 @@
 <div class = "content" [ngStyle]="{'justify-content': project.reverse ? 'flex-end' : 'flex-start', 'text-align': project.reverse ? 'right' : 'left'}">
     <h3>{{ project.name }}</h3>
     <p>{{ project.technologies }}</p>
-    <p>{{ project.discription }}</p>
+    <p>{{ project.description }}</p>
     <img [src]="project.imagePath" class="image_response">
     <div class="buttons">
         <button (click)="openLink(project.GIT)" class="gitbtn">Github</button>
