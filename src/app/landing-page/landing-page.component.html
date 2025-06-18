@@ -1,8 +1,11 @@
 <div class="wrapper">
+    <div class="landscapeMessage">
+        Bitte drehen Sie das Gerät ins Hochformat.
+    </div>
     <div class="text-block">
         <div class="button-line">
-            <button class="Contact_btn">Contact me</button>
-            <img class="arrow" src="./../../assets/img/Arrow Up.png" alt="">
+            <button class="Contact_btn" (click)="scrollTo('contact')">Contact me</button>
+            <img class="arrow" [src]="imageSrc" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()" alt="">
         </div>
         <div class="portrait_top">
             <img src="./../../assets/img/Portrait.png" alt="">

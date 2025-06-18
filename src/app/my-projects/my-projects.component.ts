@@ -21,7 +21,7 @@ export class MyProjectsComponent implements OnDestroy {
       "descriptionKey": 'JOIN_TEXT',
       "description": '',
       "GIT": "https://github.com/MKiessling88/Join-Gruppenarbeit",
-      "link": "",
+      "link": "https://marcel-kiessling.developerakademie.net/join/index.html",
       "reverse": false
     }, {
       "imagePath": "./../../../assets/img/tressures.png",
