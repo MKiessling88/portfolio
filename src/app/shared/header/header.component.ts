@@ -13,6 +13,16 @@ export class HeaderComponent {
 
   constructor(public translate: TranslateService) {}
 
+  popupOpen: boolean = false;
+
+  openPopup(): void {
+    this.popupOpen = true;
+  }
+
+    closePopup(): void {
+    this.popupOpen = false;
+  }
+
   switchLanguage(lang: 'en' | 'de'): void {
     this.translate.use(lang);
     localStorage.setItem('language', lang);

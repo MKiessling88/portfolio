@@ -3,15 +3,29 @@
         <a href="" class="font-handjet logo">&lt;MK&gt;</a>
         <div class="links">
             <a href="#why-me" class="font-roboto-mono link">Why me</a>
-            <a href="" class="font-roboto-mono link">Skills</a>
-            <a href="" class="font-roboto-mono link">Projects</a>
-            <a href="" class="font-roboto-mono link">Contact</a>
+            <a href="#my-skills" class="font-roboto-mono link">Skills</a>
+            <a href="#my-projects" class="font-roboto-mono link">Projects</a>
+            <a href="#contact" class="font-roboto-mono link">Contact</a>
         </div>
     </div>
     <div class="languageSwitch">
         <button class="font-roboto-mono colorOrange ls_btn" (click)="switchLanguage('en')">EN</button>
         <p class="font-roboto-mono colorOrange ls_btn">|</p>
         <button class="font-roboto-mono colorOrange ls_btn" (click)="switchLanguage('de')">DE</button>
-        <button class="menu_btn"><img src="./../../../assets/img/menu.png" alt=""></button>
+        <button class="menu_btn " (click)="openPopup()"><img src="./../../../assets/img/menu.png" alt=""></button>
+    </div>
+    <div class="popup_menu" *ngIf="popupOpen === true">
+        <div>
+            <button class="close_btn" (click)="closePopup()"><img src="/assets/img/close.png" alt=""></button>
+        </div>
+        <a href="#why-me" class="font-roboto-mono link" (click)="closePopup()">Why me</a>
+        <a href="#my-skills" class="font-roboto-mono link" (click)="closePopup()">Skills</a>
+        <a href="#my-projects" class="font-roboto-mono link" (click)="closePopup()">Projects</a>
+        <a href="#contact" class="font-roboto-mono link" (click)="closePopup()">Contact</a>
+        <div class="popup_menu_language">
+            <button class="font-roboto-mono colorOrange" (click)="switchLanguage('en')" (click)="closePopup()">EN</button>
+            <p class="font-roboto-mono colorOrange">|</p>
+            <button class="font-roboto-mono colorOrange" (click)="switchLanguage('de')" (click)="closePopup()">DE</button>
+        </div>
     </div>
 </div>
