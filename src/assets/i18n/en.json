@@ -6,5 +6,6 @@
     "JUMP_TEXT": "Jump, run and throw game based on object-oriented approach. Help the Hero to find lives and mana to fight against the boss.",
     "TEAMPLAYER_TEXT": "Need a teamplayer? <br> Here what my colleagues said about me",
     "CONTACT_TEXT": "I would be happy to meet with you personally <br> to discuss how I can contribute to your team's success.",
-    "PRIVACY_POLICY": "I've read the <a class=\"privacy\" href=\"PrivacyPolicy\">privacy policy</a> and agree to the processing of my data as outlined."
+    "PRIVACY_POLICY1": "I've read the ",
+    "PRIVACY_POLICY2": " and agree to the processing of my data as outlined."
 }

@@ -6,6 +6,7 @@
     "JUMP_TEXT": "Objektorientiertes Sprung-, Lauf- und Wurfspiel. Hilf dem Helden, Leben und Mana für den Kampf gegen den Boss zu finden.",
     "TEAMPLAYER_TEXT": "Brauchen Sie einen Teamplayer? <br> Was meine Kollegen über mich sagen",
     "CONTACT_TEXT": "Ich stehe gerne für ein persönliches Gespräch zur Verfügung, <br> um zu erörtern, wie ich zum Erfolg Ihres Teams beitragen kann.",
-    "PRIVACY_POLICY": "Ich habe die <a class=\"privacy\" href=\"PrivacyPolicy\">Datenschutzerklärung</a> gelesen und bin mit der darin beschriebenen Verarbeitung meiner Daten einverstanden."
+    "PRIVACY_POLICY1": "Ich habe die ",
+    "PRIVACY_POLICY2": " gelesen und stimme zu, dass meine Daten verarbeitet werden, wie beschrieben."
 
 }

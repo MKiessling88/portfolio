@@ -16,14 +16,14 @@ export class LandingPageComponent {
     this.scroller.scrollToAnchor(id);
   }
 
-  public imageSrc: string = '/assets/img/Arrow Up.png';
+  public imageSrc: string = '/assets/img/arrowdown.png';
 
   onMouseEnter() {
-    this.imageSrc = '/assets/img/arrowup_hover.png';
+    this.imageSrc = '/assets/img/arrowdown_hover.png';
   }
 
   onMouseLeave() {
-    this.imageSrc = '/assets/img/Arrow Up.png';
+    this.imageSrc = '/assets/img/arrowdown.png';
   }
 
 }

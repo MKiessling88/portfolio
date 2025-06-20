@@ -7,25 +7,25 @@
         <p class="colorGreen font-roboto-mono" [innerHTML]="'CONTACT_TEXT' | translate"></p>
         <div>
             <div class="email">
-                <img src="./../../assets/img/icon _email_.png" alt="">
-                <p class="colorGreen font-roboto-mono">E-mail: mkiessling1988&#64;outlook.de</p>
+                <img [src]="mailSrc" (mouseenter)="onIconHover('mail1', true)" (mouseleave)="onIconHover('mail1', false)" alt="">
+                <a href="mailto:mkiessling1988@outlook.de" class="colorGreen font-roboto-mono">mkiessling1988&#64;outlook.de</a>
             </div>
             <div class="number">
-                <img src="./../../assets/img/icon _phone.png" alt="">
-                <p class="colorGreen font-roboto-mono">Tel: 01520 4228053</p>
+                <img [src]="numberSrc" (mouseenter)="onIconHover('number', true)" (mouseleave)="onIconHover('number', false)" alt="">
+                <a class="colorGreen font-roboto-mono" href="tel:+491524228053">+49 1520 4228053</a>
             </div>
         </div>
-        <img class="arrow" src="./../../assets/img/Arrow Up.png" alt="">
+        <img class="arrow" (click)="scrollTo('home')" [src]="arrowSrc" (mouseenter)="onIconHover('arrow', true)" (mouseleave)="onIconHover('arrow', false)" alt="">
     </div>
     <app-contact-form></app-contact-form>
     <div class="mail_number_response">
         <div class="email_response">
-            <img src="/assets/img/icon _email_.png" alt="">
-            <p class="colorGreen font-roboto-mono">mkiessling1988&#64;outlook.de</p>
+            <img src="/assets/img/icon_email.png" alt="">
+                <a href="mailto:mkiessling1988@outlook.de" class="colorGreen font-roboto-mono">mkiessling1988&#64;outlook.de</a>
         </div>
         <div class="number_response">
-            <img src="/assets/img/icon _phone.png" alt="">
-            <p class="colorGreen font-roboto-mono">01520 4228053</p>
+            <img src="/assets/img/icon_phone.png" alt="">
+            <a class="colorGreen font-roboto-mono" href="tel:+491524228053">+49 1520 4228053</a>
         </div>
     </div>
     <div class="icons_response">

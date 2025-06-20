@@ -8,7 +8,7 @@
   <div class="checkbox-wrapper">
     <label>
       <input type="checkbox" name="terms" [(ngModel)]="contactData.termsAccepted" required />
-      <p [innerHTML]="'PRIVACY_POLICY' | translate"></p>
+      <p> {{ 'PRIVACY_POLICY1' | translate}} <a class="privacy" href="PrivacyPolicy">privacy policy</a>{{ 'PRIVACY_POLICY2' | translate}}</p>
     </label>
   </div>
 
