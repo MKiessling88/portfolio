@@ -1,8 +1,8 @@
-<form #form="ngForm" (ngSubmit)="onSubmit()" class="contact-form">
+<form #form="ngForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form">
   <div class="form-grid">
     <input [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your Name" required />
-    <input [(ngModel)]="contactData.email" name="email" type="email" placeholder="Your Email" required />
-    <textarea [(ngModel)]="contactData.message" name="message" placeholder="Your Message" required></textarea>
+    <input [(ngModel)]="contactData.email" name="email" type="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+    <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" name="message" placeholder="Your Message" required></textarea>
   </div>
 
   <div class="checkbox-wrapper">
