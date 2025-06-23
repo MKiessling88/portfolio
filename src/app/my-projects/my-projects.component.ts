@@ -37,19 +37,25 @@ export class MyProjectsComponent implements OnDestroy {
   private sub!: Subscription;
 
   constructor(private translate: TranslateService) {
-    // direkt initialisieren
     this.updateDescriptions();
 
-    // bei Sprache wechseln automatisch aktualisieren
     this.sub = this.translate.onLangChange.subscribe(() => this.updateDescriptions());
   }
 
+  /**
+   * Updates the descriptions of the projects based on the current language.
+   * @private
+   */
   private updateDescriptions() {
     this.projects.forEach(p => {
       p.description = this.translate.instant(p.descriptionKey);
     });
   }
 
+  /**
+   * Called when the component is destroyed. Unsubscribes from the translation change
+   * subscription to prevent memory leaks.
+   */
   ngOnDestroy() {
     this.sub.unsubscribe();
   }

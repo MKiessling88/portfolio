@@ -1,9 +1,23 @@
+h1{
+        padding-top: 80px;
+        padding-bottom: 10px;
+}
+
 .legal-notice {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         width: 100%;
         max-width: 1440px;
-        height: calc(100vh - 120px);
+        min-height: calc(100vh - 120px);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        p{
+                padding-bottom: 10px;
+        }
 }

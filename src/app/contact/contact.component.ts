@@ -21,6 +21,12 @@ export class ContactComponent {
   linkedIconSrc = '/assets/img/VectorLinked.png';
   arrowSrc = '/assets/img/arrowup.png';
 
+  /**
+   * Updates the source of the icon based on whether the mouse is hovering it
+   *
+   * @param icon the name of the icon
+   * @param hover whether the mouse is hovering the icon
+   */
   onIconHover(icon: string, hover: boolean): void {
 
     const basePath = '/assets/img/';
@@ -48,6 +54,11 @@ export class ContactComponent {
     }
   }
 
+  /**
+   * Scrolls the viewport to the element with the specified ID.
+   *
+   * @param id The ID of the element to scroll to.
+   */
     scrollTo(id: string) {
     this.scroller.scrollToAnchor(id);
   }

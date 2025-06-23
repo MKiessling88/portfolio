@@ -14,6 +14,11 @@ export class WhyMeComponent {
 
   constructor(public translate: TranslateService, private scroller: ViewportScroller) { }
 
+  /**
+   * Scrolls the viewport to the element with the specified ID.
+   *
+   * @param id The ID of the element to scroll to.
+   */
     scrollTo(id: string) {
     this.scroller.scrollToAnchor(id);
   }

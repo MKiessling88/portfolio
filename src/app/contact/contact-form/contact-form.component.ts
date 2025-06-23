@@ -44,6 +44,11 @@ export class ContactFormComponent {
     },
   };
 
+/**
+ * Handles the submission of the contact form.
+ * 
+ * @param ngForm - The Angular form object containing the form state and controls.
+ */
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
