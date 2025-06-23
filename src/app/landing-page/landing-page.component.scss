@@ -12,26 +12,27 @@
 }
 
 /* Hintergrund-Inhalt ausblenden auf Touch-Geräten im Landscape */
-@media (orientation: landscape)
-  // and (hover: none)
-  // and (pointer: coarse)
-  and (max-height: 800px) {
-  body > *:not(.landscapeMessage) {
+@media (orientation: landscape) // and (hover: none)
+// and (pointer: coarse)
+and (max-height: 800px) {
+  body>*:not(.landscapeMessage) {
     display: none !important;
   }
+
   .landscapeMessage {
     display: flex;
   }
 }
 
 .wrapper {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   max-width: 1440px;
   height: 100vh;
-  margin: 0 auto;
-  padding: 50px;
   box-sizing: border-box;
 }
 
@@ -63,6 +64,7 @@
   font-size: clamp(22px, 5vw, 74px);
   margin: 0;
   color: #02F4BF;
+  padding-bottom: 20px;
 }
 
 .portrait {
@@ -81,7 +83,8 @@
   color: #E15544;
   background-color: transparent;
   border-color: #02F4BF;
-  font-size: 26px;padding: 10px;
+  font-size: 26px;
+  padding: 10px;
   transition: color 0.15s ease-in-out;
 
   &:hover {
@@ -107,6 +110,12 @@
   }
 }
 
+@media screen and (max-width: 1550px) {
+  .wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
 @media (max-width: 1260px) {
   .button-line {
