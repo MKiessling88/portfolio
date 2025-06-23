@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -10,9 +10,22 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './my-skills.component.scss'
 })
 
-export class MySkillsComponent {
+export class MySkillsComponent implements AfterViewInit {
 
-  constructor(public translate: TranslateService) { }
+  constructor(public translate: TranslateService, private el: ElementRef) { }
+
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe(this.el.nativeElement);
+  }
 
   skills = [
     {

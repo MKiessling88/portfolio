@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, ElementRef, AfterViewInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
@@ -11,7 +11,26 @@ import { ProjectComponent } from './project/project.component';
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss'
 })
-export class MyProjectsComponent implements OnDestroy {
+export class MyProjectsComponent implements OnDestroy, AfterViewInit {
+
+  constructor(private translate: TranslateService, private el: ElementRef) {
+    this.updateDescriptions();
+
+    this.sub = this.translate.onLangChange.subscribe(() => this.updateDescriptions());
+  }
+
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // nur einmal animieren
+        }
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe(this.el.nativeElement);
+  }
 
   public projects = [
     {
@@ -35,12 +54,6 @@ export class MyProjectsComponent implements OnDestroy {
     }
   ];
   private sub!: Subscription;
-
-  constructor(private translate: TranslateService) {
-    this.updateDescriptions();
-
-    this.sub = this.translate.onLangChange.subscribe(() => this.updateDescriptions());
-  }
 
   /**
    * Updates the descriptions of the projects based on the current language.

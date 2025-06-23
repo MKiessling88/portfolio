@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, AfterViewInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ContactFormComponent } from "./contact-form/contact-form.component";
 import { ViewportScroller } from '@angular/common';
@@ -12,7 +12,20 @@ import { ViewportScroller } from '@angular/common';
 })
 export class ContactComponent {
 
-  constructor(public translate: TranslateService,  private scroller: ViewportScroller) { }
+  constructor(public translate: TranslateService, private scroller: ViewportScroller, private el: ElementRef) { }
+
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // nur einmal animieren
+        }
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe(this.el.nativeElement);
+  }
 
   numberSrc = '/assets/img/icon_phone.png';
   mailSrc = '/assets/img/icon_email.png';
@@ -59,7 +72,7 @@ export class ContactComponent {
    *
    * @param id The ID of the element to scroll to.
    */
-    scrollTo(id: string) {
+  scrollTo(id: string) {
     this.scroller.scrollToAnchor(id);
   }
 
