@@ -14,11 +14,17 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Marcel Kießling';
 
+  /**
+   * Sets the language for the application based on the saved preference in local storage.
+   * If no preference is saved, the language defaults to 'en'.
+   * @param translate TranslateService
+   */
     constructor(public translate: TranslateService) {
+      const saved = localStorage.getItem('language') || 'en';
     translate.addLangs(['en', 'de']);
-    translate.setDefaultLang('en');
-    translate.use('en');
+    translate.setDefaultLang(saved);
+    translate.use(saved);
    }
 }

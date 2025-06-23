@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -23,7 +23,7 @@ export class HeaderComponent {
     this.popupOpen = false;
   }
 
-  switchLanguage(lang: 'en' | 'de'): void {
+  switchLanguage(lang: string) {
     this.translate.use(lang);
     localStorage.setItem('language', lang);
   }

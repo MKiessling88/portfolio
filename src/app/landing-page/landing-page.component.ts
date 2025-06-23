@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
 
-    constructor(private scroller: ViewportScroller) {}
+    constructor(public translate: TranslateService, private scroller: ViewportScroller) {}
 
   /**
    * Scrolls the viewport to the element with the specified ID.

@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <H1>My Projects</H1>
+    <H2>{{ 'MY_PROJECTS' | translate }}</H2>
     <div class="projects">
         <app-project *ngFor="let project of projects;"
         [project]="project" [ngStyle]="{ 'flex-direction': project.reverse ? 'row-reverse' : 'row' }"></app-project>

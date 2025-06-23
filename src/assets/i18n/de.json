@@ -1,5 +1,9 @@
 {
     "WHY_ME": "Warum ich",
+    "SKILLS": "Fertigkeiten",
+    "MY_SKILLS": "Meine Fertigkeiten",
+    "PROJECTS": "Projekte",
+    "MY_PROJECTS": "Meine Projekte",
     "WHY_ME_TEXT": "Ich bin begeistert vom Programmieren, weil es mir ermöglicht, Ideen in funktionale Lösungen umzusetzen, die wirklich etwas bewirken. Die ständige Weiterentwicklung der Technologie treibt mich an, kontinuierlich zu lernen und mich beruflich weiterzuentwickeln. Ich liebe es, komplexe Probleme zu lösen, und jede Herausforderung erweitert meine Fähigkeiten und weckt meine Begeisterung für die Entwicklung.",
     "I_AM": "ich bin",
     "JOIN_TEXT": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag & Drop und weisen Sie Benutzer und Kategorien zu.",
@@ -7,6 +11,10 @@
     "TEAMPLAYER_TEXT": "Brauchen Sie einen Teamplayer? <br> Was meine Kollegen über mich sagen",
     "CONTACT_TEXT": "Ich stehe gerne für ein persönliches Gespräch zur Verfügung, <br> um zu erörtern, wie ich zum Erfolg Ihres Teams beitragen kann.",
     "PRIVACY_POLICY1": "Ich habe die ",
-    "PRIVACY_POLICY2": " gelesen und stimme zu, dass meine Daten verarbeitet werden, wie beschrieben."
-
+    "PRIVACY_POLICY2": " gelesen und stimme zu, dass meine Daten verarbeitet werden, wie beschrieben.",
+    "CONTACT": "Kontaktiere mich",
+    "LOCATION": "Wohnhaft in <br> Baden-Würtemberg",
+    "RELOCATE": "bereit <br> umzuziehen",
+    "REMOTE": "offen für <br> Homeoffice",
+    "TALK": "Lass uns reden"
 }

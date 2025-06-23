@@ -1,3 +1,7 @@
+h2 {
+    font-size: 50px;
+}
+
 .wrapper {
     position: relative;
     max-width: 1440px;
@@ -10,10 +14,11 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        gap: 70px;
 
         .skill-img {
             width: 88px;
-            height: 100px;
+            height: 92px;
             margin: 20px 10px;
         }
     }

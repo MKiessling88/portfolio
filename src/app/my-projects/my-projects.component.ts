@@ -1,13 +1,13 @@
 import { Component, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { ProjectComponent } from './project/project.component';
 
 @Component({
   selector: 'app-my-projects',
   standalone: true,
-  imports: [CommonModule, ProjectComponent],
+  imports: [CommonModule, ProjectComponent, TranslateModule],
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss'
 })
