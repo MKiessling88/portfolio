@@ -1,35 +1,28 @@
 <div class="legal-notice">
-  <h1 class="font-roboto-mono colorOrange">Impressum</h1>
+  <h1 class="font-roboto-mono colorOrange" [innerHTML]="'IMPRINT' | translate"></h1>
 
-  <p class="font-roboto-mono colorOrange"><strong>Angaben gemäß § 5 TMG:</strong></p>
-  <p class="font-roboto-mono colorGreen">
-    Marcel Kießling<br>
-    Emmishoferstraße 6<br>
-    78187 Geisingen<br>
-    Deutschland
-  </p>
+  <p class="font-roboto-mono colorOrange"><strong [innerHTML]="'IMPRINT_PARAGRAPH' | translate"></strong></p>
+  <p class="font-roboto-mono colorGreen" [innerHTML]="'IMPRINT_ADRESS' | translate"></p>
 
-  <p class="font-roboto-mono colorOrange"><strong>Kontakt:</strong></p>
+  <p class="font-roboto-mono colorOrange"><strong [innerHTML]="'IMPRINT_CONTACT' | translate"></strong></p>
   <p class="font-roboto-mono colorGreen">
-    Telefon: 01520 4228053<br>
+    {{'IMPRINT_PHONE' | translate}} 01520 4228053<br>
     E-Mail: mkiessling1988&#64;outlook.de
   </p>
 
-  <p class="font-roboto-mono colorOrange"><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong></p>
+  <p class="font-roboto-mono colorOrange"><strong [innerHTML]="'IMPRINT_RESPONSIBILITY' | translate"></strong></p>
   <p class="font-roboto-mono colorGreen">
     Marcel Kießling<br>
     Emmishoferstraße 6<br>
     78187 Geisingen
   </p>
 
-  <p class="font-roboto-mono colorGreen"><strong class="colorOrange">Haftungsausschluss:</strong><br>
-    Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.
-    Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+  <p class="font-roboto-mono colorGreen"><strong class="colorOrange" [innerHTML]="'IMPRINT_DISCLAIMER' | translate"></strong><br>
+    {{'IMPRINT_DISCLAIMER_TEXT' | translate}}
   </p>
 
-  <p class="font-roboto-mono colorGreen"><strong class="colorOrange">Urheberrecht:</strong><br>
-    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
-    Beiträge Dritter sind als solche gekennzeichnet.
+  <p class="font-roboto-mono colorGreen"><strong class="colorOrange">{{'IMPRINT_COPYRIGHT' | translate}}</strong><br>
+    {{'IMPRINT_COPYRIGHT_TEXT' | translate}}
   </p>
 </div>
 

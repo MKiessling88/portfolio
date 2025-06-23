@@ -18,10 +18,10 @@
         <div>
             <button class="close_btn" (click)="closePopup()"><img src="/assets/img/close.png" alt=""></button>
         </div>
-        <a href="#why-me" class="font-roboto-mono link" (click)="closePopup()">Why me</a>
-        <a href="#my-skills" class="font-roboto-mono link" (click)="closePopup()">Skills</a>
-        <a href="#my-projects" class="font-roboto-mono link" (click)="closePopup()">Projects</a>
-        <a href="#contact" class="font-roboto-mono link" (click)="closePopup()">Contact</a>
+        <a href="#why-me" class="font-roboto-mono link" (click)="closePopup()">{{ 'WHY_ME' | translate }}</a>
+        <a href="#my-skills" class="font-roboto-mono link" (click)="closePopup()">{{ 'SKILLS' | translate }}</a>
+        <a href="#my-projects" class="font-roboto-mono link" (click)="closePopup()">{{ 'PROJECTS' | translate }}</a>
+        <a href="#contact" class="font-roboto-mono link" (click)="closePopup()">{{ 'CONTACT' | translate }}</a>
         <div class="popup_menu_language">
             <button class="font-roboto-mono colorOrange" (click)="switchLanguage('en')" (click)="closePopup()">EN</button>
             <p class="font-roboto-mono colorOrange">|</p>

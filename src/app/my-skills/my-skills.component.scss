@@ -1,5 +1,7 @@
 h2 {
     font-size: 50px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .wrapper {
@@ -16,10 +18,17 @@ h2 {
         flex-wrap: wrap;
         gap: 70px;
 
-        .skill-img {
-            width: 88px;
-            height: 92px;
-            margin: 20px 10px;
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .skill-img {
+                width: 75px;
+                height: 75px;
+                margin: 20px 10px;
+            }
         }
     }
 

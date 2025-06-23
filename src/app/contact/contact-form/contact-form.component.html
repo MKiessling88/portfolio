@@ -1,16 +1,36 @@
 <form #form="ngForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form">
   <div class="form-grid">
-    <input [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your Name" required />
-    <input [(ngModel)]="contactData.email" name="email" type="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
-    <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" name="message" placeholder="Your Message" required></textarea>
+    <input [(ngModel)]="contactData.name" name="name" type="text" placeholder="{{ 'CONTACT_NAME' | translate}}" #name="ngModel" required
+      minlength="2" />
+    <input [(ngModel)]="contactData.email" name="email" type="email" placeholder="{{ 'CONTACT_EMAIL' | translate}}" #email="ngModel" required
+      email pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+    <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" name="message"
+      placeholder="{{ 'CONTACT_MESSAGE' | translate}}" required></textarea>
   </div>
 
   <div class="checkbox-wrapper">
     <label>
-      <input type="checkbox" name="terms" [(ngModel)]="contactData.termsAccepted" required />
-      <p> {{ 'PRIVACY_POLICY1' | translate}} <a class="privacy" href="PrivacyPolicy">privacy policy</a>{{ 'PRIVACY_POLICY2' | translate}}</p>
+      <input type="checkbox" name="terms" [(ngModel)]="contactData.termsAccepted" #terms="ngModel" required />
+      <p> {{ 'PRIVACY_POLICY1' | translate}} <a class="privacy" href="PrivacyPolicy">privacy policy</a>{{
+        'PRIVACY_POLICY2' | translate}}</p>
     </label>
   </div>
 
-  <button type="submit" [disabled]="!form.valid">Send</button>
+  <div *ngIf="name.touched && name.invalid">
+    <small *ngIf="name.errors?.['required']">{{ 'CONTACT_NAME_ERROR' | translate}}</small>
+    <small *ngIf="name.errors?.['minlength']">{{ 'CONTACT_NAME_ERROR2' | translate}}</small>
+  </div>
+  <div *ngIf="email.touched && email.invalid">
+    <small *ngIf="email.errors?.['required']">{{ 'CONTACT_EMAIL_ERROR' | translate}}</small>
+    <small *ngIf="email.errors?.['email']">{{ 'CONTACT_EMAIL_ERROR2' | translate}}</small>
+  </div>
+  <div *ngIf="message.touched && message.invalid">
+    <small *ngIf="message.errors?.['required']">{{ 'CONTACT_MESSAGE_ERROR' | translate}}</small>
+    <small *ngIf="message.errors?.['minlength']">{{ 'CONTACT_MESSAGE_ERROR2' | translate}}</small>
+  </div>
+  <div *ngIf="terms.touched && terms.invalid">
+    <small>{{ 'CONTACT_POLICY_ERROR' | translate}}<a class="privacy" href="PrivacyPolicy">privacy policy</a>.</small>
+  </div>
+
+  <button type="submit" [disabled]="!form.valid">{{ 'CONTACT_SEND' | translate}}</button>
 </form>

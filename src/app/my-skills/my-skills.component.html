@@ -1,8 +1,10 @@
 <div class = "wrapper">
     <h2 class="colorOrange font-roboto-mono">{{ 'MY_SKILLS' | translate }}</h2>
     <div class="skill-container">
-        <img *ngFor="let skill of skills" src="{{ skill.imagePath }}" class="skill-img" alt="">
-        <img src="assets/img/skills/skill-Challenge.png" class="skill-img challenge" alt="">
+        <div class="skill" *ngFor="let skill of skills">
+            <img src="{{ skill.imagePath }}" class="skill-img" alt="">
+            <p class="colorGreen font-roboto-mono">{{ skill.name }}</p>
+        </div>
         <div class="skill-text">
             <span class="colorGreen font-roboto-mono">I am always happy to learn new technologies,just tell me what you need.</span>
         </div>

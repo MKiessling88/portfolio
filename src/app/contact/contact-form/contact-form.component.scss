@@ -1,12 +1,16 @@
 .contact-form {
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     font-family: 'Roboto Mono';
     max-width: 1440px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+}
+
+small{
+    color: red;
 }
 
 .form-grid {

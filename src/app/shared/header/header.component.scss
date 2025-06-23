@@ -1,6 +1,8 @@
 .wrapper {
     position: absolute;
     padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     top: 0px;
     width: 100%;
     max-width: 1440px;
@@ -122,7 +124,7 @@ a {
     width: 32px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .links {
         display: none;
     }

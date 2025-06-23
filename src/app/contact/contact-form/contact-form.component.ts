@@ -3,11 +3,12 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, TranslateModule],
+  imports: [FormsModule, TranslateModule, CommonModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })

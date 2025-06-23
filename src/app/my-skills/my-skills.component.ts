@@ -15,15 +15,49 @@ export class MySkillsComponent {
   constructor(public translate: TranslateService) { }
 
   skills = [
-    { imagePath: 'assets/img/skills/skill-Angular.png' },
-    { imagePath: 'assets/img/skills/skill-TypeScript.png' },
-    { imagePath: 'assets/img/skills/skill-JavaScript.png' },
-    { imagePath: 'assets/img/skills/skill-HTML.png' },
-    { imagePath: 'assets/img/skills/skill-CSS.png' },
-    { imagePath: 'assets/img/skills/skill-Rest-Api.png' },
-    { imagePath: 'assets/img/skills/skill-Firebase.png' },
-    { imagePath: 'assets/img/skills/skill-GIT.png' },
-    { imagePath: 'assets/img/skills/skill-Scrum.png' },
-    { imagePath: 'assets/img/skills/skill-MaterialDesign.png' },
+    {
+      imagePath: 'assets/img/skills/angular.png',
+      name: 'Angular'
+    },
+    {
+      imagePath: 'assets/img/skills/typeScript.png',
+      name: 'TypeScript'
+    },
+    {
+      imagePath: 'assets/img/skills/javaScript.png',
+      name: 'JavaScript'
+    },
+    {
+      imagePath: 'assets/img/skills/html.png',
+      name: 'HTML'
+    },
+    {
+      imagePath: 'assets/img/skills/css.png',
+      name: 'CSS'
+    },
+    {
+      imagePath: 'assets/img/skills/api.png',
+      name: 'REST-API'
+    },
+    {
+      imagePath: 'assets/img/skills/fireBase.png',
+      name: 'Firebase'
+    },
+    {
+      imagePath: 'assets/img/skills/git.png',
+      name: 'GIT'
+    },
+    {
+      imagePath: 'assets/img/skills/scrum.png',
+      name: 'Scrum'
+    },
+    {
+      imagePath: 'assets/img/skills/materialDesign.png',
+      name: 'Material Design'
+    },
+    {
+      imagePath: 'assets/img/skills/challenge.png',
+      name: 'Challenge me'
+    },
   ];
 }
