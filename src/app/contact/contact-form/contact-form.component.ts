@@ -4,11 +4,12 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, TranslateModule, CommonModule],
+  imports: [FormsModule, TranslateModule, CommonModule, RouterModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })

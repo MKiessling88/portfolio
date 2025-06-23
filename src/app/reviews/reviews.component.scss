@@ -60,3 +60,33 @@
         }
     }
 }
+
+:root {
+  --green: #02F4BF;
+  --orange: #E15544;
+}
+
+.reviews::-webkit-scrollbar {
+  height: 12px;
+}
+
+.reviews::-webkit-scrollbar-track {
+  background-color: #E15544;
+  border-radius: 6px;
+}
+
+.rreviews::-webkit-scrollbar-thumb {
+  background-color: #02F4BF;
+  border-radius: 6px;
+  border: 3px solid #E15544;
+}
+
+.reviews::-webkit-scrollbar-thumb:hover {
+  background-color: #00dab0;
+}
+
+/* Firefox */
+.reviews {
+  scrollbar-width: thin;
+  scrollbar-color: #02F4BF transparent;
+}

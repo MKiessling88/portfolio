@@ -1,37 +1,29 @@
 <div class="wrapper">
-    <div>
+  <div>
     <h4 class="font-handjet colorOrange">&lt;MK&gt;</h4>
     <p class="font-roboto-mono colorOrange p_frontend">Frontend Developer</p>
-</div>
-<div>
+  </div>
+  <div>
     <h5 class="font-roboto-mono colorOrange">&copy; Marcel Kießling 2025</h5>
     <div class="links">
-        <a href="LegalNotice" class="font-roboto-mono colorOrange">Legal Notice</a>
-        <a href="PrivacyPolicy" class="font-roboto-mono colorOrange">Privacy Policy</a>
+      <a routerLink="/LegalNotice" routerLinkActive="active" class="font-roboto-mono colorOrange">Legal Notice</a>
+      <a routerLink="/PrivacyPolicy" class="font-roboto-mono colorOrange">Privacy Policy</a>
     </div>
+  </div>
+  <div class="icons">
+    <a href="https://github.com/MKiessling88" target="_blank">
+      <img [src]="gitIconSrc" (mouseenter)="onIconHover('git', true)" (mouseleave)="onIconHover('git', false)"
+        alt="GitHub Icon" /></a>
+    <a href="mailto:mkiessling1988@outlook.de">
+      <img [src]="mailIconSrc" (mouseenter)="onIconHover('mail', true)" (mouseleave)="onIconHover('mail', false)"
+        alt="Mail Icon" />
+    </a>
+    <a href="https://www.linkedin.com/in/marcel-kießling-674308371" target="_blank">
+      <img [src]="linkedIconSrc" (mouseenter)="onIconHover('linked', true)" (mouseleave)="onIconHover('linked', false)"
+        alt="LinkedIn Icon" />
+    </a>
+  </div>
 </div>
-<div class="icons">
-<img
-  [src]="gitIconSrc"
-  (mouseenter)="onIconHover('git', true)"
-  (mouseleave)="onIconHover('git', false)"
-  alt="GitHub Icon"
-/>
 
-<!-- Mail Icon -->
-<img
-  [src]="mailIconSrc"
-  (mouseenter)="onIconHover('mail', true)"
-  (mouseleave)="onIconHover('mail', false)"
-  alt="Mail Icon"
-/>
 
-<!-- LinkedIn Icon -->
-<img
-  [src]="linkedIconSrc"
-  (mouseenter)="onIconHover('linked', true)"
-  (mouseleave)="onIconHover('linked', false)"
-  alt="LinkedIn Icon"
-/>
-</div>
-</div>
+

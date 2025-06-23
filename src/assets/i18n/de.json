@@ -43,13 +43,13 @@
     "PRIVACY_POLICY_DATE": "Stand: Juni 2025",
     "CONTACT_NAME": "Name",
     "CONTACT_NAME_ERROR": "Name ist ein Pflichtfeld.",
-    "CONTACT_NAME_ERROR2": "Mindestens 2 Zeichen.",
+    "CONTACT_NAME_ERROR2": "Name muss mindestens 2 Zeichen lang sein.",
     "CONTACT_EMAIL": "E-Mail",
     "CONTACT_EMAIL_ERROR": "E-mail ist ein Pflichtfeld.",
     "CONTACT_EMAIL_ERROR2": "Ungültige E‑Mail.",
     "CONTACT_MESSAGE": "Nachricht",
     "CONTACT_MESSAGE_ERROR": "Nachricht ist ein Pflichtfeld.",
-    "CONTACT_MESSAGE_ERROR2": "Mindestens 10 Zeichen.",
+    "CONTACT_MESSAGE_ERROR2": "Nachricht muss mindestens 10 Zeichen lang sein.",
     "CONTACT_POLICY_ERROR": "Bitte akzeptieren Sie die ",
     "CONTACT_SEND": "Senden"
 }
