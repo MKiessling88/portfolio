@@ -40,7 +40,7 @@ export class MyProjectsComponent implements OnDestroy, AfterViewInit {
       "descriptionKey": 'JOIN_TEXT',
       "description": '',
       "GIT": "https://github.com/MKiessling88/Join-Gruppenarbeit",
-      "link": "https://marcel-kiessling.developerakademie.net/join/index.html",
+      "link": "https://join.kiessling-marcel.de",
       "reverse": false
     }, {
       "imagePath": "./../../../assets/img/tressures.png",
@@ -49,7 +49,7 @@ export class MyProjectsComponent implements OnDestroy, AfterViewInit {
       "descriptionKey": 'JUMP_TEXT',
       "description": '',
       "GIT": "https://github.com/MKiessling88/Treasures-of-Eternity",
-      "link": "https://marcel-kiessling.developerakademie.net/Projekte/jumpandrun/index.html",
+      "link": "https://treasuresofeternity.kiessling-marcel.de",
       "reverse": true
     }
   ];

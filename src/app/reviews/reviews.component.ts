@@ -29,19 +29,19 @@ export class ReviewsComponent {
 
   public reviews = [
     {
-      "name": "Noah Müller",
+      "name": "Markus",
       "project": "JOIN",
       "review": "’’Marcel was a great team member. He had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’"
     },
     {
       "name": "Noah Müller",
       "project": "JOIN",
-      "review": "’’Marcel was a great team member. He had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’"
+      "review": "’’Marcel was always a reliable member of our team. He developed, formatted, and delivered content on time and in high quality. He demonstrated strong communication skills and worked effectively in close collaboration with his colleagues.’’"
     },
     {
-      "name": "Noah Müller",
+      "name": "Sophie",
       "project": "JOIN",
-      "review": "’’Marcel was a great team member. He had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’"
+      "review": "’’Marcel distinguished himself through great commitment and sense of responsibility. He took on the design, structuring, and timely delivery of content – always in close coordination with the team.’’"
     },
   ];
 }
